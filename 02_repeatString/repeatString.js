@@ -1,5 +1,13 @@
-const repeatString = function() {
+const repeatString = function(word, times) {
+    if (times < 0) {
+        return 'error'
+    };
 
+    let string = '';
+    for (let x = 0; x < times; x++) {
+        string += word;
+    };
+    return string;
 };
 
 // Do not edit below this line
